@@ -10,8 +10,8 @@ Por exemplo:
 ```
 $ py gerarISBN.py
 ***** Novo livro inventado *****
-ISBN10: 602-383-954-1
-ISBN13: 979-602-383-954-3
+ISBN10: 604-412-018-X
+ISBN13: 978-604-412-018-8
 ```
 
 ## Validar ISBN
