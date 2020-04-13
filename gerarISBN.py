@@ -11,12 +11,10 @@ def isbn10chksum(digits):
 def isbn13chksum(digits):
     sum_digits = 0
     for i in range (0, len(digits)):
-        if i & 1:
-            #print("Indice {}: digito {} vezes 3".format(i,digits[i]))
-            sum_digits += int(digits[i]) * 3
+        if i & 1:   # Fazemos uma junção binária com 1 - valida a paridade
+            sum_digits += int(digits[i]) * 3 #ímpar (1, 3, 5, ...) é multiplicado por 3
         else:
-            #print("Indice {}: digito {} vezes 1".format(i,digits[i]))
-            sum_digits += int(digits[i])
+            sum_digits += int(digits[i]) #par (0, 2, 6) é multiplicado por 1
     return (10 - (sum_digits % 10))
 
 # Vamos gerar ambos para o mesmo "livro" 
