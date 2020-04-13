@@ -28,7 +28,8 @@ lang_group   = [0, 1, 2, 3, 4, 5, 7, 65, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
 
 
 # Escolher um prefixo ao acaso para o isbn13
-grp_prefx = gs1_prefix[random.randint(0,1)]
+#grp_prefx = gs1_prefix[random.randint(0,1)]
+grp_prefx = gs1_prefix[0] # A nossa lista de lang_group só é válida para o prefixo 978, por isso temos que o forçar
 
 # Escolher um "grupo de linguas" ao acaso da lista
 grp_group = random.choice(lang_group)    
